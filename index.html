@@ -29,6 +29,7 @@
         </div>
         <div class="col-span-3 grid grid-cols-3">
             <div id="toDoContainer" class="grid grid-cols-2 bg-red-100 border-1 px-3 py-2 gap-3">
+
                 <div class="flex flex-col bg-cyan-50 rounded-lg border-1 border-cyan-700 p-2 gap-2">
                     <h1 class="text-2xl font-semibold">Example Task</h1>
                     <h1 class="text-center bg-red-600 border-3 border-red-800 rounded-2xl">Priority: High</h1>
@@ -44,8 +45,8 @@
                     </div>
                     <button class="text-center border-1 rounded-lg bg-white" type="button">Edit</button>
                     <button class="text-center border-1 rounded-lg bg-white" type="button">Delete</button>
-
                 </div>
+                
                 <h1 class="bg-white">1</h1>
                 <h1>1</h1>
             </div>
@@ -67,7 +68,7 @@
 
     <!-- New Modal -->
     <div id="crudModal"
-        class="flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[rgb(0,0,0,0.6)]">
+        class="hidden flex overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full bg-[rgb(0,0,0,0.6)]">
         <div class="relative p-4 w-full max-w-md max-h-full bg-white rounded-lg">
             <div class="flex items-center justify-between my-4 border-b rounded-t dark:border-gray-600 border-gray-200">
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -100,9 +101,19 @@
                         <select id="category"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             <option selected="" value="">Select Priority</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
+                            <option value="3">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="1">High</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <h1 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status</h1>
+                        <select id="progress"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="" value="">Select Status</option>
+                            <option value="3">Completed</option>
+                            <option value="2">To Do</option>
+                            <option value="1">In Progress</option>
                         </select>
                     </div>
                     <div class="col-span-2">
