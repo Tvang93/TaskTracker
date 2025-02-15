@@ -32,3 +32,10 @@ Task Tracker
         Be sure to test everything for this.
         Desktop Build for this application.
         download the images below for examples
+
+
+##### Did Not Finish
+### To Do
+make edit button functional
+make delete button functional --- worked on
+fix grids

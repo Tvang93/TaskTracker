@@ -88,6 +88,10 @@ const constructCard = (element, where) => {
     let DeleteBtn = document.createElement('button')
     DeleteBtn.classList = "text-center border-1 rounded-lg bg-white";
     DeleteBtn.innerText = "Delete";
+    DeleteBtn.addEventListener('click', () => {
+      RemoveFromSavedTask(element)
+      outerDiv.remove()
+    })
     
     outerDiv.appendChild(taskH1);
     outerDiv.appendChild(priorityH1);
